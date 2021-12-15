@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div id="display">
+            <input type="text" id="input" value=""/>
+        </div>
+        <div id="keypad">
+        <button onclick="clearResult()"  id="clr">C</button>
+        <button class="btn" onclick="backSpace()"  id="backSpace">Delete</button>
+        <button class="btn" onclick="btnclick(this)" value="**" id="power">Pow</button>
+        <button class="btn" onclick="btnclick(this)" value="(" id="block7">(</button>
+        <button class="btn" onclick="btnclick(this)" value=")" id="block8">)</button>
+        <button class="btn" onclick="btnclick(this)" value="/100*" id="block9">%</button>
+        <button class="btn" onclick="btnclick(this)" value="/" id="multiply">/</button>
+        <button class="btn" onclick="btnclick(this)" value="7" id="block7">7</button>
+        <button class="btn" onclick="btnclick(this)" value="8" id="block8">8</button>
+        <button class="btn" onclick="btnclick(this)" value="9" id="block9">9</button>
+        <button class="btn" onclick="btnclick(this)" value="*" id="multiply">&times;</button>
+        <button class="btn" onclick="btnclick(this)" value="4" id="block4">4</button>
+        <button class="btn" onclick="btnclick(this)" value="5" id="block5">5</button>
+        <button class="btn" onclick="btnclick(this)" value="6" id="block6">6</button>
+        <button class="btn" onclick="btnclick(this)" value="+" id="plus">+</button>
+        <button class="btn" onclick="btnclick(this)" value="1" id="block1">1</button>
+        <button class="btn" onclick="btnclick(this)" value="2" id="block2">2</button>
+        <button class="btn" onclick="btnclick(this)" value="3" id="block3">3</button>
+        <button class="btn" onclick="btnclick(this)" value="-" id="minus">-</button>
+        <button class="btn" onclick="btnclick(this)" value="0" id="block0">0</button>
+        <button class="btn" onclick="btnclick(this)" value="." id="dot">.</button>
+        <button class="btn" onclick="showResult()" value="=" id="ans">=</button>
+        </div>
+    </div>
+<script src="app.js"></script>  
+</body>
+</html>
